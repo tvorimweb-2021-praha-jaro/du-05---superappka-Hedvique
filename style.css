@@ -28,6 +28,134 @@ body {
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+.navigace {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+}
+
+a {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+.odkaz {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+}
+
+.odkaz:hover {
+    background-color: #48418e;
+    color: white;
+}
+
+.super-appka {
+    font-weight: bold;
+    color: #25133d;
+}
+
+.popis {
+    font-size: 2.5rem;
+}
+
+.uvod {
+    background: url(images/pozadi.jpg);
+    color: white;
+    padding: 2rem 2rem;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+.odstavce {
+    padding: 2rem 2rem;
+}
+
+.odstavec {
+    text-align: center;
+    color: #48418e;
+}
+
+.tlacitka {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.tlacitko {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 1.5rem 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+.vice-informaci:hover {
+    background-color: #48418e;
+}
+
+.stahnout-zdarma:hover {
+    background-color: #25133d;
+}
+.stahnout-zdarma {
+    background-color: #48418e;
+}
+
+.vice-informaci {
+    background-color: #25133d;
+}
+footer {
+    background-color: #48418e;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1.0rem;
+}
+
+@media screen and (min-width: 480px) {
+    .navigace {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .tlacitko {
+        padding: 2rem 2rem;
+        margin: 0 1rem;
+    }
+    .tlacitka {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .odstavce {
+        display: flex;
+        flex-direction: row;
+    }
+} 
+
+@media screen and (min-width: 860px) {
+    .uvod{
+        background-image: url(images/telefon.png), url(images/pozadi.jpg) ;
+        background-repeat: no-repeat;
+        background-position: right bottom, center;
+        background-size: 300px, cover;
+        min-height: fit-content;
+        }
+}
+
+
+
+
+
+
