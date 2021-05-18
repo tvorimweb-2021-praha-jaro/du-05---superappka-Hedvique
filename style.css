@@ -42,14 +42,17 @@ body {
 }
 
 a {
-    display: flex;
-    flex-basis: 50%;
-    justify-content: center;
+    text-decoration: none;
+    color: white;
 }
 
 .odkaz {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
     text-decoration: none;
     padding: 0.8rem 1.5rem;
+    color: #48418e;
 }
 
 .odkaz:hover {
@@ -60,6 +63,7 @@ a {
 .super-appka {
     font-weight: bold;
     color: #25133d;
+    text-transform: uppercase;
 }
 
 .popis {
@@ -70,11 +74,13 @@ a {
     background: url(images/pozadi.jpg);
     color: white;
     padding: 2rem 2rem;
+    background-color: rgb(105, 38, 122);
 }
 
 h1 {
     font-weight: 800;
-    font-size: 5rem;
+    font-size: 4.1rem;
+    margin: 1rem 0;
 }
 
 .odstavce {
@@ -95,7 +101,7 @@ h1 {
 .tlacitko {
     border: 1px solid #fff;
     border-radius: 5px;
-    padding: 1.5rem 1.5rem;
+    padding: 0.5rem 2rem;
     margin: 1rem 0;
     text-align: center;
     font-size: 1rem;
@@ -126,23 +132,40 @@ footer {
 
 @media screen and (min-width: 480px) {
     .navigace {
-        display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
     .tlacitko {
-        padding: 2rem 2rem;
-        margin: 0 1rem;
+        padding: 1rem 2rem;
+        margin: 0.5 1rem;
     }
     .tlacitka {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .odstavce {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 } 
+
+@media screen and (min-width: 600px) {
+    .navigace {
+        flex-wrap: nowrap;
+    }
+
+    .odkaz {
+        flex-basis: auto;
+    }
+
+    .tlacitko {
+        margin: 0.7rem 0;
+    }
+
+    .odstavce {
+        flex-direction: row;
+    }
+}
 
 @media screen and (min-width: 860px) {
     .uvod{
@@ -151,6 +174,27 @@ footer {
         background-position: right bottom, center;
         background-size: 300px, cover;
         min-height: fit-content;
+        }
+        .navigace {
+            flex-wrap: nowrap;
+        }
+
+        .odkaz {
+            flex-basis: auto;
+        }
+        .odstavce {
+            flex-direction: row;
+        }
+
+        .tlacitka {
+            flex-direction: row;
+        }
+
+        .tlacitko {
+            margin: 0 1rem;
+        }
+        .stahnout-zdarma {
+            margin-left: 0;
         }
 }
 
