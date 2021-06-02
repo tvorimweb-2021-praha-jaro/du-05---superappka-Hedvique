@@ -24,7 +24,7 @@ body {
 }
 
 .obal {
-    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    max-width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -159,10 +159,18 @@ footer {
     }
 
     .tlacitko {
-        margin: 0.7rem 0;
+        margin: 0.7rem 0.9rem;
     }
 
     .odstavce {
+        flex-direction: row;
+    }
+
+    .odstavec {
+        padding: 0 0.8rem;
+    }
+
+    .tlacitka {
         flex-direction: row;
     }
 }
